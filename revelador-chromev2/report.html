@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Elementos Ocultos</title>
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; padding: 30px; background: #f0f2f5; color: #1c1e21; }
+        .container { max-width: 1000px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h1 { color: #1a73e8; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px; }
+        th { background-color: #f8f9fa; color: #5f6368; text-transform: uppercase; font-size: 12px; }
+        tr:hover { background-color: #fcfcfc; }
+        .tag-badge { background: #546e7a; color: white; padding: 3px 8px; border-radius: 4px; font-family: monospace; }
+        .reason { color: #d93025; font-weight: 500; }
+        .code-info { color: #188038; font-family: monospace; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Elementos Ocultos</h1>
+        <p id="origin"></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Identificação</th>
+                    <th>Motivo</th>
+                    <th>Conteúdo Extraído</th>
+                </tr>
+            </thead>
+            <tbody id="report-body">
+                </tbody>
+        </table>
+    </div>
+    <script src="report.js"></script>
+</body>
+</html>
